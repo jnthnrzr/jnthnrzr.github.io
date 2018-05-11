@@ -2,48 +2,158 @@
 <html lang="en-US">
 
 <head>
-  <title>Developer | Tinkerer - Jonathan Rozario</title>
+  <title>Developer+Tinkerer - Jonathan Rozario</title>
+  <meta name="author" content="Jonathan Rozario">
+  <meta name="description" content="Jonathan Rozario profile page">
+  <meta name="keywords" content="Jonathan, Rozario, profile, developer, Python, HTML, CSS, JavaScript, Java, C++, software, engineer">
   <!-- Responsive Design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400|Source+Serif+Pro:400,300,600" rel="stylesheet">
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" media="screen and (min-width:550px)" href="style-medium.css">
-  <link rel="stylesheet" media="screen and (min-width:1000px)" href="style-large.css">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" media="screen and (min-width:575px)" href="css/style-medium.css">
+  <link rel="stylesheet" media="screen and (min-width:780px)" href="css/style-large.css">
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
     crossorigin="anonymous">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400|Source+Serif+Pro:400,300,600" rel="stylesheet">
 </head>
 
 <body>
-  <div class="post-header">
-    <div class="container">
-      <div class="row">
-        <div class="four columns">
+  <header class="container">
+    <div class="row">
+      <div class="six columns">
+        <a href="/" title="Jonathan Rozario">
           <h1>Jonathan Rozario</h1>
-        </div>
-        <div class="eight columns">
-          <nav>
-            <ul class="nav-list">
-              <li>Projects</li>
-              <li>Resume</li>
-            </ul>
-          </nav>
-        </div>
+        </a>
+      </div>
+      <div class="six columns">
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a href="#projects" title="Some projects I have worked on">
+                <i class="fas fa-briefcase"></i> Projects
+              </a>
+            </li>
+            <li id="resume">
+              <a href="resume.pdf" title="Download my resume!">
+                <i class="fas fa-download"></i> Resume
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-  </div>
+  </header>
 
-  
+  <figure>
+    <img src="profile.jpg" style="width: 740px;" alt="A portrait of Jonathan Rozario" />
+  </figure>
+
+  <main class="container">
+
+    <!-- A Brief Intro -->
+    <section class="intro row" aria-label="Bio">
+      <p>Hello! I'm Jonathan Rozario. Welcome to my little home in the internet.</p>
+      <p>Recently, I worked as the application developer for a psychological study at the Attention &amp; Neuropsychological
+        Development (ATTEND) Lab in
+        <a href="https://www.ccny.cuny.edu" target="_blank" rel="noopener" title="The City College of New York">The City College of New York</a>.
+      </p>
+      <p>I love making web applications using
+        <a href="https://www.python.org" target="_blank" rel="noopener" title="Python">Python</a>. Thanks to my Computer Science background, I am also comfortable with JavaScript, Java, and C++.</p>
+        <p>When
+        I'm not busy with a project, you will find me biking, reading, or trying out some new programming languages.
+      </p>
+    </section>
+
+    <!-- Description of projects undertaken -->
+    <section id="projects" class="projects row" aria-label="Description of projects undertaken">
+      <h2 class="row">Projects</h2>
+
+      <div class="six columns">
+        <div class="project-heading">
+          <h3>Food Craving Survey</h3>
+          <span>
+            <a href="https://foodcraving.herokuapp.com" title="Food Craving Survey at Heroku" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt fa-fw fa-lg"></i>
+            </a>
+            <a href="https://github.com/jnthnrzr/food-craving-survey" title="Food Craving Survey source code">
+              <i class="fab fa-github fa-fw fa-2x"></i>
+            </a>
+          </span>
+        </div>
+        <p>
+          This was a fun project for me, targeted at implementing a survey system for images from the ground up. Visitors to the website
+          are asked to rate different types of food using a range slider. An additional download functionality enables looking
+          back at responses of users from the past. The app is deployed on Heroku and connected to a remote PostgreSQL database
+          for storage.
+        </p>
+      </div>
+
+      <div class="six columns">
+        <div class="project-heading">
+          <h3>E Train Stations</h3>
+          <a href="https://github.com/jnthnrzr/e-train-stations" title="E Train Stations source code" target="_blank" rel="noopener">
+            <i class="fab fa-github fa-fw fa-2x"></i>
+          </a>
+        </div>
+        <p>I applied for the Alexa Student Developer Diploma with this Alexa skill. The app is for people who ride the E Train
+          in the NYC Subway. Through a series of random questions, players test their knowledge about the E Train stations.
+          After deploying the skill on the Amazon store, I was selected for the Developer Diploma, along with some Amazon
+          Echo goodies. This was my first deployment of any sort and I'm quite proud of that.
+        </p>
+      </div>
+
+      <div class="six columns">
+        <div class="project-heading">
+          <h3 class="">Rent-Buy-Sell</h3>
+          <a href="https://github.com/jnthnrzr/rent-buy-sell" title="Rent-Buy-Sell source code" target="_blank" rel="noopener">
+            <i class="fab fa-github fa-fw fa-2x"></i>
+          </a>
+        </div>
+        <p>I was part of a team of friends tasked with implementing a pseudo-Ebay web application, using any framework/tool
+          of choice. We stuck with Django and a SQLite database, with the prime focus on the user stories of buying, selling,
+          and renting virtual items on a make-believe marketplace. Along with a search functionality and basic templating
+          of products and fields, the project provided on the total experience of a transaction from selecting products to
+          checkout.
+        </p>
+      </div>
+
+      <div class="six columns">
+        <div class="project-heading">
+          <h3>PyStock</h3>
+          <a href="https://github.com/jnthnrzr/pystock" title="PyStock source code" target="_blank" rel="noopener">
+            <i class="fab fa-github fa-fw fa-2x"></i>
+          </a>
+        </div>
+        <p>I worked with a team to provide a Python implementation of different types of transactions in a stock exchange scenario,
+          specifically buying on margin and short selling. The MySQL database was queried using a Python driver and the data
+          gathered was analyzed and then displayed on a HTML website using Python classes.
+        </p>
+      </div>
+    </section>
+
+    <footer class="row">
+      <section class="columns">
+        <a href="https://github.com/jnthnrzr" title="Github profile" target="_blank" rel="noopener">
+          <i class="fab fa-github-alt fa-fw fa-lg"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/jonathanrozario" title="LinkedIn profile" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin fa-fw fa-lg"></i> LinkedIn
+        </a>
+        <p>jonathanrozario &copy; 2017 - Present</p>
+      </section>
+    </footer>
+
+  </main>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columns h1 {
+    margin-left: 0.25rem;
+    text-align: left;
+}
+
+.six {
+    width: 50%;
+}
+
+nav {
+    padding: 0rem;
+    margin: 0;
+}
