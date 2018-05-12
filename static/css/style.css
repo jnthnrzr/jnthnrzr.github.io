@@ -109,3 +109,13 @@ a {
     cursor: pointer;
     color: initial;
 }
+
+i.fas.fa-external-link-alt.fa-lg {
+    position: relative;
+    top: -2px;
+}
+
+i.fab.fa-github.fa-2x {
+    position: relative;
+    top: 2px;
+}
