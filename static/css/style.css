@@ -120,3 +120,52 @@ i.fab.fa-github.fa-2x {
     position: relative;
     top: 2px;
 }
+
+.card {
+    /* Add shadows to create the "card" effect */
+    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);*/
+    border-radius: 8px;
+    /*transition: 0.3s;*/
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Overlay */
+.overlay-text {
+    position: absolute;
+    display: table;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #eee;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity .3s, visibility .3s;
+}
+
+.overlay-text p {
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.project-description {
+    position: relative;
+}
+
+.card:hover .overlay-text {
+    visibility: visible;
+    opacity: 1;
+}

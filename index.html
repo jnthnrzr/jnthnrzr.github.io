@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-  <title>Developer+Tinkerer - Jonathan Rozario</title>
+  <title>Full Stack | Tinkerer - Jonathan Rozario</title>
   <meta name="author" content="Jonathan Rozario">
   <meta name="description" content="Jonathan Rozario profile page">
   <meta name="keywords" content="Jonathan, Rozario, profile, developer, Python, HTML, CSS, JavaScript, Java, C++, software, engineer">
@@ -78,7 +78,7 @@
     <section id="projects" class="projects row" aria-label="Description of projects undertaken">
       <h2 class="row">Projects</h2>
 
-      <div class="six columns">
+      <div class="six columns card">
         <div class="project-heading">
           <h3>Food Craving Survey</h3>
           <span>
@@ -90,55 +90,105 @@
             </a>
           </span>
         </div>
-        <p>
-          This was a fun project for me, targeted at implementing a survey system for images. Visitors to the website
-          are asked to rate different types of food using a range slider. A download functionality enables looking
-          back at responses of users from the past. The app is deployed on Heroku and connected to a remote PostgreSQL database
-          for storage. Travis-CI is used on the code repository to keep track of testing and code coverage. 
-        </p>
+        <div class="project-description">
+          <img class="project-img" src="static/images/rent-buy-sell.png" alt="Screen Capture for Rent-Buy-Sell">
+          <p class="overlay-text">
+            An online survey system hosted on Heroku to track users about food desirability
+          </p>
+        </div>
       </div>
 
-      <div class="six columns">
+      <div class="six columns card">
         <div class="project-heading">
           <h3>E Train Stations</h3>
           <a href="https://github.com/jnthnrzr/e-train-stations" title="E Train Stations source code" target="_blank" rel="noopener">
             <i class="fab fa-github fa-2x"></i>
           </a>
         </div>
-        <p>I applied for the Alexa Student Developer Diploma with this Alexa skill. The app is for people who ride the E Train
-          in the NYC Subway. Through a series of random questions, players test their knowledge about the E Train stations.
-          After deploying the skill on the Amazon store, I was selected for the Developer Diploma, along with some Amazon
-          Echo goodies. This was my first deployment of any sort and I'm quite proud of that.
-        </p>
+        <div class="project-description">
+          <img class="project-img" src="static/images/rent-buy-sell.png" alt="Alexa logo">
+          <p class="overlay-text">
+            An Alexa trivia game made with NodeJS and Alexa Skills Kit for riders of the E Train in NYC Subway
+          </p>
+        </div>
       </div>
 
-      <div class="six columns">
+      <div class="six columns card">
         <div class="project-heading">
           <h3 class="">Rent-Buy-Sell</h3>
           <a href="https://github.com/jnthnrzr/rent-buy-sell" title="Rent-Buy-Sell source code" target="_blank" rel="noopener">
             <i class="fab fa-github fa-2x"></i>
           </a>
         </div>
-        <p>I was part of a team of friends tasked with implementing a pseudo-eBay web application, using any framework/tool
-          of choice. We stuck with Django and a SQLite database, with the prime focus on the user stories of buying, selling,
-          and renting virtual items on a make-believe marketplace. Along with a search functionality and basic templating
-          of products and fields, the project provided on the total experience of a transaction from selecting products to
-          checkout.
-        </p>
+        <div class="project-description">
+          <img class="project-img" src="static/images/rent-buy-sell.png" alt="Screen Capture for Rent-Buy-Sell">
+          <p class="overlay-text">
+            A team project for an implementation of a pseudo-eBay web application using Django, Materialize CSS, and a SQLite database
+          </p>
+        </div>
       </div>
 
-      <div class="six columns">
+      <div class="six columns card">
         <div class="project-heading">
-          <h3>PyStock</h3>
-          <a href="https://github.com/jnthnrzr/pystock" title="PyStock source code" target="_blank" rel="noopener">
+          <h3 class="">Guessing Game</h3>
+          <a href="https://github.com/jnthnrzr/guessing-game" title="Guessing Game source code" target="_blank" rel="noopener">
             <i class="fab fa-github fa-2x"></i>
           </a>
         </div>
-        <p>This is a Python implementation of different types of transactions in a stock exchange scenario,
-          specifically buying on margin and short selling. The MySQL database was queried using a Python driver and the data
-          gathered was analyzed and then displayed on a HTML website using Python classes. 
-        </p>
+        <div class="project-description">
+          <img class="project-img" src="static/images/rent-buy-sell.png" alt="Screen Capture for Rent-Buy-Sell">
+          <p class="overlay-text">
+            A responsive guessing game for a random number using ReactJS(ES6) deployed with Github Pages
+          </p>
+        </div>
       </div>
+
+      <!--<div class="six columns">-->
+        <!--<div class="project-heading">-->
+          <!--<h3>Food Craving Survey</h3>-->
+          <!--<span>-->
+            <!--<a href="https://foodcraving.herokuapp.com" title="Food Craving Survey at Heroku" target="_blank" rel="noopener">-->
+              <!--<i class="fas fa-external-link-alt fa-lg"></i>-->
+            <!--</a>-->
+            <!--<a href="https://github.com/jnthnrzr/food-craving-survey" title="Food Craving Survey source code">-->
+              <!--<i class="fab fa-github fa-2x"></i>-->
+            <!--</a>-->
+          <!--</span>-->
+        <!--</div>-->
+        <!--<p>-->
+          <!--This was a fun project for me, targeted at implementing a survey system for images. Visitors to the website-->
+          <!--are asked to rate different types of food using a range slider. A download functionality enables looking-->
+          <!--back at responses of users from the past. The app is deployed on Heroku and connected to a remote PostgreSQL database-->
+          <!--for storage. Travis-CI is used on the code repository to keep track of testing and code coverage.-->
+        <!--</p>-->
+      <!--</div>-->
+
+      <!--<div class="six columns">-->
+        <!--<div class="project-heading">-->
+          <!--<h3>E Train Stations</h3>-->
+          <!--<a href="https://github.com/jnthnrzr/e-train-stations" title="E Train Stations source code" target="_blank" rel="noopener">-->
+            <!--<i class="fab fa-github fa-2x"></i>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!--<p>I applied for the Alexa Student Developer Diploma with this Alexa skill. The app is for people who ride the E Train-->
+          <!--in the NYC Subway. Through a series of random questions, players test their knowledge about the E Train stations.-->
+          <!--After deploying the skill on the Amazon store, I was selected for the Developer Diploma, along with some Amazon-->
+          <!--Echo goodies. This was my first deployment of any sort and I'm quite proud of that.-->
+        <!--</p>-->
+      <!--</div>-->
+
+      <!--<div class="six columns">-->
+        <!--<div class="project-heading">-->
+          <!--<h3>PyStock</h3>-->
+          <!--<a href="https://github.com/jnthnrzr/pystock" title="PyStock source code" target="_blank" rel="noopener">-->
+            <!--<i class="fab fa-github fa-2x"></i>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!--<p>This is a Python implementation of different types of transactions in a stock exchange scenario,-->
+          <!--specifically buying on margin and short selling. The MySQL database was queried using a Python driver and the data-->
+          <!--gathered was analyzed and then displayed on a HTML website using Python classes.-->
+        <!--</p>-->
+      <!--</div>-->
     </section>
 
     <footer class="row">
@@ -149,7 +199,7 @@
         <a href="https://www.linkedin.com/in/jonathanrozario" title="LinkedIn profile" target="_blank" rel="noopener">
           <i class="fab fa-linkedin fa-fw fa-lg"></i> LinkedIn
         </a>
-        <p>jonathanrozario &copy; 2017 - Present</p>
+        <p>Jonathan Rozario &copy; 2017 - Present</p>
       </section>
     </footer>
 
