@@ -1,9 +1,9 @@
 body {
-    color: #283035;
+    color: #444444;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-family: "Source Serif Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Serif Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -32,12 +32,9 @@ header {
 }
 
 ul {
+    text-align: center;
     padding-left: 0;
     margin: 0;
-}
-
-ul {
-    text-align: center;
 }
 
 ul li {
@@ -56,7 +53,6 @@ figure {
 
 img {
     max-width: 100%;
-    border-radius: 4px;
 }
 
 p {
@@ -122,50 +118,66 @@ i.fab.fa-github.fa-2x {
 }
 
 .card {
-    /* Add shadows to create the "card" effect */
-    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);*/
+    /*box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);*/
+    background-color: white;
     border-radius: 8px;
-    /*transition: 0.3s;*/
+    max-width: 95%;
+    margin: 1em auto;
+    transition: all 0.2s ease;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.55);
 }
 
-/* Overlay */
-.overlay-text {
+.project-img {
+    margin: auto auto;
+    background-color: #00CAFF;
+}
+
+.overlay-wrap {
     position: absolute;
-    display: table;
-    text-align: center;
-    margin: auto;
-    height: 100%;
-    width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(10, 10, 10, 0.78);
     color: #eee;
     visibility: hidden;
     opacity: 0;
-
-    /* transition effect. not necessary */
-    transition: opacity .3s, visibility .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.overlay-text p {
-    margin: auto;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+/* Overlay */
+.overlay-text {
+    transition: .2s;
+    transform: translateY(0.1em);
+    font-family: Raleway, sans-serif;
+    padding: 1rem;
 }
 
 .project-description {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.card:hover .overlay-text {
+.card:hover .overlay-wrap {
     visibility: visible;
     opacity: 1;
+}
+
+.tech-stack li {
+    border: 1px solid #307EA9;
+    margin: 4px;
+    padding: 6px;
+    font-family: Source Serif Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+.tech-stack a {
+    display: block;
 }
