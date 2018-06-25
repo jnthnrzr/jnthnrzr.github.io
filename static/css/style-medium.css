@@ -21,3 +21,7 @@ nav {
 nav ul {
     text-align: right;
 }
+
+.card {
+    width: 95%;
+}
