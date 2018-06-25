@@ -1,5 +1,5 @@
 body {
-    color: #444444;
+    color: #444;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -101,38 +101,34 @@ a {
     background-color: transparent;
 }
 
+a:hover {
+    color: #00afff;
+}
+
 .project-heading i, footer i {
     margin: 4px;
     cursor: pointer;
     color: initial;
 }
 
-i.fas.fa-external-link-alt.fa-lg {
-    position: relative;
-    top: -2px;
-}
-
-i.fab.fa-github.fa-2x {
-    position: relative;
-    top: 2px;
+.project-links {
+    float: right;
+    padding-top: 4px;
+    padding-right: 10px;
 }
 
 .card {
-    /*box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);*/
+    border: 1px solid #efefef;
     background-color: white;
     border-radius: 8px;
     max-width: 95%;
     margin: 1em auto;
-    transition: all 0.2s ease;
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.55);
-}
-
-.project-img {
-    margin: auto auto;
-    background-color: #00CAFF;
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
 }
 
 .overlay-wrap {
@@ -141,8 +137,8 @@ i.fab.fa-github.fa-2x {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 10, 0.78);
-    color: #eee;
+    background: rgba(10, 10, 10, 0.65);
+    color: #fff;
     visibility: hidden;
     opacity: 0;
     display: flex;
@@ -172,12 +168,8 @@ i.fab.fa-github.fa-2x {
 .tech-stack li {
     border: 1px solid #307EA9;
     margin: 4px;
-    padding: 6px;
-    font-family: Source Serif Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 3px;
+    font-family: "Source Serif Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
-    border-radius: 8px;
-}
-
-.tech-stack a {
-    display: block;
+    border-radius: 5px;
 }
