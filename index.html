@@ -1,212 +1,480 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <title>Full Stack | Tinkerer - Jonathan Rozario</title>
+    <meta name="author" content="Jonathan Rozario" />
+    <meta name="description" content="Jonathan Rozario profile page" />
+    <meta
+      name="keywords"
+      content="Jonathan, Rozario, profile, developer, Python, HTML, CSS, JavaScript, Java, C++, software, engineer"
+    />
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" media="screen" href="static/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:650px)"
+      href="static/css/style-medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:800px)"
+      href="static/css/style-large.css"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="static/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="static/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="static/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+      integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+      crossorigin="anonymous"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400|Source+Serif+Pro:400,300,600"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Full Stack | Tinkerer - Jonathan Rozario</title>
-  <meta name="author" content="Jonathan Rozario">
-  <meta name="description" content="Jonathan Rozario profile page">
-  <meta name="keywords" content="Jonathan, Rozario, profile, developer, Python, HTML, CSS, JavaScript, Java, C++, software, engineer">
-  <!-- Responsive Design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" media="screen" href="static/css/style.css">
-  <link rel="stylesheet" media="screen and (min-width:650px)" href="static/css/style-medium.css">
-  <link rel="stylesheet" media="screen and (min-width:800px)" href="static/css/style-large.css">
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-  <link rel="shortcut icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
-  <link rel="shortcut icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-  <link rel="manifest" href="static/favicon/site.webmanifest">
-  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
-    crossorigin="anonymous">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400|Source+Serif+Pro:400,300,600" rel="stylesheet">
-</head>
-
-<body>
-  <header class="container">
-    <div class="row">
-      <div class="six columns">
-        <a href="/" title="Jonathan Rozario">
-          <h1>Jonathan Rozario</h1>
-        </a>
-      </div>
-      <div class="six columns">
-        <nav>
-          <ul class="nav-list">
-            <li>
-              <a href="#projects" title="Some projects I have worked on">
-                <i class="fas fa-briefcase"></i> Projects
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <figure>
-    <img src="static/images/profile.jpg" style="width: 740px;" alt="A portrait of Jonathan Rozario" />
-  </figure>
-
-
-  <main class="container">
-
-    <!-- A Brief Intro -->
-    <section class="intro row" aria-label="Bio">
-      <p>Hello! I'm Jonathan Rozario. Welcome to my little home in the internet.</p>
-      <p>I work as the full-stack developer for a psychological study at the Attention &amp; Neuropsychological
-        Development (ATTEND) Lab in
-        <a href="https://www.ccny.cuny.edu" target="_blank" rel="noopener" title="The City College of New York">The City College of New York</a>.
-      </p>
-      <p>I love making web applications using
-        <a href="https://www.python.org" target="_blank" rel="noopener" title="Python homepage">Python</a>.
-        I am also comfortable with <a href="https://www.javascript.com/" target="_blank" rel="noopener" title="JavaScript homepage">JavaScript</a> and <a href="http://oracle.com/java/" target="_blank" rel="noopener" title="Java homepage">Java</a>.</p>
-      <p>When I'm not busy with a project, you will find me biking, reading, or trying out some new programming languages.
-      </p>
-    </section>
-
-    <!-- Description of projects undertaken -->
-    <section id="projects" class="projects row" aria-label="Description of projects undertaken">
-      <h2 class="row">Projects</h2>
-
-      <div class="six columns">
-        <div class="card">
-          <div class="project-heading">
-          <h3>Food Craving Survey</h3>
-          <span class="project-links">
-            <span>
-              <a href="https://foodcraving.herokuapp.com" title="Food Craving Survey at Heroku" target="_blank" rel="noopener">
-                <i class="fas fa-external-link-alt fa-md"></i>demo</a>
-            </span>
-            <span>
-              <a href="https://github.com/jnthnrzr/food-craving-survey" title="Food Craving Survey source code" target="_blank" rel="noopener">
-                <i class="fab fa-github fa-lg"></i>code</a>
-            </span>
-          </span>
-          </div>
-          <div class="project-description">
-            <img class="project-img" src="static/images/food-craving-survey.png" alt="Screen Capture for Rent-Buy-Sell">
-            <div class="overlay-wrap">
-              <p class="overlay-text">An online survey system built with Flask and hosted on Heroku to track users about food interest</p>
-            </div>
-          </div>
-          <ul class="tech-stack">
-            <li><a href="https://www.palletsprojects.com/p/flask/" title="Flask homepage" target="_blank" rel="noopener">Flask</a></li>
-            <li><a href="https://www.sqlalchemy.org/" title="SQLAlchemy homepage" target="_blank" rel="noopener">SQLAlchemy</a></li>
-            <li><a href="https://www.postgresql.org/" title="Postgres homepage" target="_blank" rel="noopener">Postgres</a></li>
-            <li><a href="https://www.heroku.com/" title="Heroku homepage" target="_blank" rel="noopener">Heroku</a></li>
-            <li><a href="https://docs.pytest.org/en/latest/" title="pytest homepage" target="_blank" rel="noopener">pytest</a></li>
-            <li><a href="https://travis-ci.org/" title="Travis-CI homepage" target="_blank" rel="noopener">Travis-CI</a></li>
-          </ul>
+  <body>
+    <header class="container">
+      <div class="row">
+        <div class="six columns">
+          <a href="/" title="Jonathan Rozario">
+            <h1>Jonathan Rozario</h1>
+          </a>
+        </div>
+        <div class="six columns">
+          <nav>
+            <ul class="nav-list">
+              <li>
+                <a href="#projects" title="Some projects I have worked on">
+                  <i class="fas fa-briefcase"></i> Projects
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
+    </header>
 
-      <div class="six columns">
-        <div class="card">
-          <div class="project-heading">
-            <h3>E Train Stations</h3>
-            <span class="project-links">
-              <span><a href="https://bit.ly/etrains" title="E Train Stations at Alexa Skills Store" target="_blank" rel="noopener">
-                <i class="fas fa-external-link-alt fa-md"></i>demo</a>
-              </span>
-              <span><a href="https://github.com/jnthnrzr/e-train-stations" title="E Train Stations source code" target="_blank" rel="noopener">
-                <i class="fab fa-github fa-lg"></i>code</a>
-              </span>
-            </span>
-          </div>
-          <div class="project-description">
-            <img class="project-img" src="static/images/e-train-stations.png" alt="Screen Capture of 'E Train Stations' at Alexa Skills Store">
-            <div class="overlay-wrap">
-              <p class="overlay-text">An Alexa trivia game made with NodeJS and Alexa Skills Kit for riders of the E Train in NYC Subway</p>
-            </div>
-          </div>
-          <ul class="tech-stack">
-            <li><a href="https://nodejs.org/en/" title="Travis-CI homepage" target="_blank" rel="noopener">NodeJS</a></li>
-            <li><a href="https://www.npmjs.com/" title="npm homepage" target="_blank" rel="noopener">npm</a></li>
-            <li><a href="https://aws.amazon.com/lambda/" title="AWS Lambda homepage" target="_blank" rel="noopener">AWS Lambda</a></li>
-            <li><a href="https://developer.amazon.com/alexa-skills-kit" title="Alexa Skills Kit homepage" target="_blank" rel="noopener">Alexa Skills Kit</a></li>
-          </ul>
-        </div>
-      </div>
+    <figure>
+      <img
+        src="static/images/profile.jpg"
+        style="width: 740px;"
+        alt="A portrait of Jonathan Rozario"
+      />
+    </figure>
 
-      <div class="six columns">
-        <div class="card">
-          <div class="project-heading">
-            <h3 class="">Rent-Buy-Sell</h3>
-            <span class="project-links">
-              <span><a href="https://github.com/jnthnrzr/rent-buy-sell" title="Rent-Buy-Sell source code" target="_blank" rel="noopener">
-                <i class="fab fa-github fa-lg"></i>code</a>
-              </span>
-            </span>
-          </div>
-          <div class="project-description">
-            <img class="project-img" src="static/images/rent-buy-sell.png" alt="Screen Capture for Rent-Buy-Sell">
-            <div class="overlay-wrap">
-              <p class="overlay-text">
-                A team project for an e-commerce webapp using Django, Materialize CSS, and SQLite
-              </p>
-            </div>
-          </div>
-          <ul class="tech-stack">
-            <li><a href="https://www.djangoproject.com/" title="Django homepage" target="_blank" rel="noopener">Django</a></li>
-            <li><a href="https://materializecss.com/" title="Materialize CSS homepage" target="_blank" rel="noopener">Materialize CSS</a></li>
-            <li><a href="https://www.sqlite.org/" title="SQLite homepage" target="_blank" rel="noopener">SQLite</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="six columns">
-        <div class="card">
-          <div class="project-heading">
-            <h3 class="">Guessing Game</h3>
-
-            <span class="project-links">
-              <span>
-                <a href="https://jnthnrzr.github.io/guessing-game" title="Guessing Game demo" target="_blank" rel="noopener">
-                <i class="fas fa-external-link-alt fa-md"></i>demo</a>
-              </span>
-              <span>
-                <a href="https://github.com/jnthnrzr/guessing-game" title="Guessing Game source code" target="_blank" rel="noopener">
-                <i class="fab fa-github fa-lg"></i>code</a>
-              </span>
-            </span>
-          </div>
-          <div class="project-description">
-            <img class="project-img" src="static/images/guessing-game.png" alt="Screen Capture for Guessing Game">
-            <div class="overlay-wrap">
-              <p class="overlay-text">
-                A responsive guessing game for a random number using ReactJS (ES6) deployed with Github Pages
-              </p>
-            </div>
-          </div>
-          <ul class="tech-stack">
-            <li><a href="https://reactjs.org/" title="ReactJS homepage" target="_blank" rel="noopener">ReactJS</a></li>
-            <li><a href="https://www.ecma-international.org/ecma-262/6.0/" title="ES6 homepage" target="_blank" rel="noopener">ES6</a></li>
-            <li><a href="https://pages.github.com/" title="GitHub Pages homepage" target="_blank" rel="noopener">GitHub Pages</a></li>
-          </ul>
-        </div>
-      </div>
-
-    </section>
-
-    <footer class="row">
-      <section class="columns">
-        <a href="https://github.com/jnthnrzr" title="Github profile" target="_blank" rel="noopener">
-          <i class="fab fa-github-alt fa-fw fa-lg"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/jonathanrozario" title="LinkedIn profile" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin fa-fw fa-lg"></i> LinkedIn
-        </a>
-        <p>Jonathan Rozario &copy; 2017 - Present</p>
+    <main class="container">
+      <!-- A Brief Intro -->
+      <section class="intro row" aria-label="Bio">
+        <p>
+          Hello! I'm Jonathan Rozario. Welcome to my little home in the
+          internet.
+        </p>
+        <p>
+          I love making web applications using
+          <a
+            href="https://www.python.org"
+            target="_blank"
+            rel="noopener"
+            title="Python homepage"
+            >Python</a
+          >. I am also comfortable with
+          <a
+            href="https://www.javascript.com/"
+            target="_blank"
+            rel="noopener"
+            title="JavaScript homepage"
+            >JavaScript</a
+          >
+          and
+          <a
+            href="http://oracle.com/java/"
+            target="_blank"
+            rel="noopener"
+            title="Java homepage"
+            >Java</a
+          >.
+        </p>
+        <p>
+          When I'm not busy with a project, you will find me biking, reading, or
+          trying out some new programming languages.
+        </p>
       </section>
-    </footer>
 
-  </main>
-</body>
+      <!-- Description of projects undertaken -->
+      <section
+        id="projects"
+        class="projects row"
+        aria-label="Description of projects undertaken"
+      >
+        <h2 class="row">Projects</h2>
 
+        <div class="six columns">
+          <div class="card">
+            <div class="project-heading">
+              <h3>Food Craving Survey</h3>
+              <span class="project-links">
+                <span>
+                  <a
+                    href="https://foodcraving.herokuapp.com"
+                    title="Food Craving Survey at Heroku"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-external-link-alt fa-md"></i>demo</a
+                  >
+                </span>
+                <span>
+                  <a
+                    href="https://github.com/jnthnrzr/food-craving-survey"
+                    title="Food Craving Survey source code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fab fa-github fa-lg"></i>code</a
+                  >
+                </span>
+              </span>
+            </div>
+            <div class="project-description">
+              <img
+                class="project-img"
+                src="static/images/food-craving-survey.png"
+                alt="Screen Capture for Rent-Buy-Sell"
+              />
+              <div class="overlay-wrap">
+                <p class="overlay-text">
+                  An online survey system built with Flask and hosted on Heroku
+                  to track users about food interest
+                </p>
+              </div>
+            </div>
+            <ul class="tech-stack">
+              <li>
+                <a
+                  href="https://www.palletsprojects.com/p/flask/"
+                  title="Flask homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >Flask</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.sqlalchemy.org/"
+                  title="SQLAlchemy homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >SQLAlchemy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.postgresql.org/"
+                  title="Postgres homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >Postgres</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.heroku.com/"
+                  title="Heroku homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >Heroku</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.pytest.org/en/latest/"
+                  title="pytest homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >pytest</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://travis-ci.org/"
+                  title="Travis-CI homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >Travis-CI</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="six columns">
+          <div class="card">
+            <div class="project-heading">
+              <h3>E Train Stations</h3>
+              <span class="project-links">
+                <span
+                  ><a
+                    href="https://bit.ly/etrains"
+                    title="E Train Stations at Alexa Skills Store"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-external-link-alt fa-md"></i>demo</a
+                  >
+                </span>
+                <span
+                  ><a
+                    href="https://github.com/jnthnrzr/e-train-stations"
+                    title="E Train Stations source code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fab fa-github fa-lg"></i>code</a
+                  >
+                </span>
+              </span>
+            </div>
+            <div class="project-description">
+              <img
+                class="project-img"
+                src="static/images/e-train-stations.png"
+                alt="Screen Capture of 'E Train Stations' at Alexa Skills Store"
+              />
+              <div class="overlay-wrap">
+                <p class="overlay-text">
+                  An Alexa trivia game made with NodeJS and Alexa Skills Kit for
+                  riders of the E Train in NYC Subway
+                </p>
+              </div>
+            </div>
+            <ul class="tech-stack">
+              <li>
+                <a
+                  href="https://nodejs.org/en/"
+                  title="Travis-CI homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >NodeJS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.npmjs.com/"
+                  title="npm homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >npm</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://aws.amazon.com/lambda/"
+                  title="AWS Lambda homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >AWS Lambda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developer.amazon.com/alexa-skills-kit"
+                  title="Alexa Skills Kit homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >Alexa Skills Kit</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="six columns">
+          <div class="card">
+            <div class="project-heading">
+              <h3 class="">Rent-Buy-Sell</h3>
+              <span class="project-links">
+                <span
+                  ><a
+                    href="https://github.com/jnthnrzr/rent-buy-sell"
+                    title="Rent-Buy-Sell source code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fab fa-github fa-lg"></i>code</a
+                  >
+                </span>
+              </span>
+            </div>
+            <div class="project-description">
+              <img
+                class="project-img"
+                src="static/images/rent-buy-sell.png"
+                alt="Screen Capture for Rent-Buy-Sell"
+              />
+              <div class="overlay-wrap">
+                <p class="overlay-text">
+                  A team project for an e-commerce webapp using Django,
+                  Materialize CSS, and SQLite
+                </p>
+              </div>
+            </div>
+            <ul class="tech-stack">
+              <li>
+                <a
+                  href="https://www.djangoproject.com/"
+                  title="Django homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >Django</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://materializecss.com/"
+                  title="Materialize CSS homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >Materialize CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.sqlite.org/"
+                  title="SQLite homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >SQLite</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="six columns">
+          <div class="card">
+            <div class="project-heading">
+              <h3 class="">Guessing Game</h3>
+
+              <span class="project-links">
+                <span>
+                  <a
+                    href="https://jnthnrzr.github.io/guessing-game"
+                    title="Guessing Game demo"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-external-link-alt fa-md"></i>demo</a
+                  >
+                </span>
+                <span>
+                  <a
+                    href="https://github.com/jnthnrzr/guessing-game"
+                    title="Guessing Game source code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fab fa-github fa-lg"></i>code</a
+                  >
+                </span>
+              </span>
+            </div>
+            <div class="project-description">
+              <img
+                class="project-img"
+                src="static/images/guessing-game.png"
+                alt="Screen Capture for Guessing Game"
+              />
+              <div class="overlay-wrap">
+                <p class="overlay-text">
+                  A responsive guessing game for a random number using ReactJS
+                  (ES6) deployed with Github Pages
+                </p>
+              </div>
+            </div>
+            <ul class="tech-stack">
+              <li>
+                <a
+                  href="https://reactjs.org/"
+                  title="ReactJS homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >ReactJS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ecma-international.org/ecma-262/6.0/"
+                  title="ES6 homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >ES6</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://pages.github.com/"
+                  title="GitHub Pages homepage"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub Pages</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="row">
+        <section class="columns">
+          <a
+            href="https://github.com/jnthnrzr"
+            title="Github profile"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-github-alt fa-fw fa-lg"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jonathanrozario"
+            title="LinkedIn profile"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-linkedin fa-fw fa-lg"></i> LinkedIn
+          </a>
+          <p>Jonathan Rozario &copy; 2017 - Present</p>
+        </section>
+      </footer>
+    </main>
+  </body>
 </html>
